@@ -18,9 +18,7 @@ function createGrid() {
   for (let i = 0; i < gridInputValue * gridInputValue; i++) {
     const field = document.createElement("div");
     gridContainer.appendChild(field);
-    field.addEventListener('hover',)
   }
 }
-gridInput.addEventListener("change", createGrid());
-
-
+gridInput.addEventListener("load", createGrid());
+gridInput.addEventListener("change", createGrid);
