@@ -1,1 +1,37 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(236, 110, 110);
+  padding-bottom: 50px;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  max-width: 40%;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.options button {
+  flex: 1;
+}
+
+.gridContainer {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.gridOptions {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=style.css.map */
