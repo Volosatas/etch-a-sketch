@@ -63,7 +63,7 @@ function reset() {
   createGridAndDraw();
 }
 
-window.addEventListener("load", createGridAndDraw());
+window.addEventListener("load", createGridAndDraw);
 gridInput.addEventListener("change", reset);
 gridInput.addEventListener("change", createGridAndDraw);
 eraserButton.addEventListener("click", toggleEraser);
