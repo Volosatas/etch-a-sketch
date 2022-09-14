@@ -40,7 +40,6 @@ function createGridAndDraw() {
 }
 
 function toggleEraser() {
-  console.log(eraserButton.value);
   if (eraserButton.value === "OFF") {
     color = "white";
     eraserButton.classList.remove("btn-outline-warning");
@@ -64,7 +63,7 @@ function reset() {
   createGridAndDraw();
 }
 
-gridInput.addEventListener("load", createGridAndDraw());
+window.addEventListener("load", createGridAndDraw());
 gridInput.addEventListener("change", reset);
 gridInput.addEventListener("change", createGridAndDraw);
 eraserButton.addEventListener("click", toggleEraser);

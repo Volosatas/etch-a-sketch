@@ -4,11 +4,13 @@ html {
 }
 
 .mainContainer {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(236, 110, 110);
+  background-color: rgb(177, 111, 45);
   padding-bottom: 50px;
+  color: white;
 }
 
 header {
@@ -30,8 +32,18 @@ header {
   width: 500px;
   height: 500px;
   background-color: white;
+  border: 10px solid rgb(240, 72, 38);
 }
 
 .gridOptions {
   margin-bottom: 30px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.flex-row input {
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

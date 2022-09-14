@@ -3,11 +3,13 @@ html {
   margin: 0 auto;
 }
 .mainContainer {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(236, 110, 110);
+  background-color: rgb(177, 111, 45);
   padding-bottom: 50px;
+  color: white;
 }
 header {
   margin-top: 20px;
@@ -27,10 +29,17 @@ header {
   width: 500px;
   height: 500px;
   background-color: white;
+  border: 10px solid rgb(240, 72, 38);
 }
 .gridOptions {
   margin-bottom: 30px;
 }
-.background-black {
-  background-color: black;
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & input {
+    border-radius: 5px;
+  }
 }

@@ -26,7 +26,10 @@
         <h1>Etch Your Sketch!</h1>
       </header>
       <section class="options">
-        <input type="color" value="" id="colorPicker" />
+        <div class="flex-row">
+          <label for="colorPicker">Color:</label>
+          <input type="color" value="" id="colorPicker" />
+        </div>
         <button
           type="button"
           class="btn btn-outline-warning"
@@ -39,7 +42,7 @@
           Clear
         </button>
       </section>
-      <div class="gridOptions">
+      <div class="gridOptions flex-row">
         <label for="gridInput">Grid size: </label>
         <input type="range" id="gridInput" min="12" max="64" />
       </div>
