@@ -3,6 +3,7 @@
 // 5. fn to erase drawing
 const gridInput = document.getElementById("gridInput");
 const gridContainer = document.querySelector(".gridContainer");
+const colorPicker = document.getElementById("colorPicker");
 
 function getGridSize() {
   const gridInputValue = parseInt(gridInput.value, 10);
@@ -23,15 +24,26 @@ function createGrid() {
   }
 
   function draw() {
+    let color = "black";
+    colorPicker.addEventListener("input", () => {
+      color = colorPicker.value;
+    });
+
     const allFields = gridContainer.querySelectorAll(".field");
     allFields.forEach((field) => {
       field.addEventListener("mouseover", (e) => {
-        e.target.style.backgroundColor = "black";
+        e.target.style.backgroundColor = `${color}`;
       });
     });
   }
   draw();
 }
+function reset() {
+  while (gridContainer.firstChild) {
+    gridContainer.removeChild(gridContainer.lastChild);
+  }
+}
 
 gridInput.addEventListener("load", createGrid());
+gridInput.addEventListener("change", reset);
 gridInput.addEventListener("change", createGrid);
