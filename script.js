@@ -52,6 +52,7 @@ function toggleEraser() {
     eraserButton.value = "OFF";
   }
 }
+
 function reset() {
   while (gridContainer.firstChild) {
     gridContainer.removeChild(gridContainer.lastChild);
